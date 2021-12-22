@@ -241,7 +241,7 @@ img
 .services
     min-height: 870px
     text-align: center
-    padding: 100px 0 100px 0
+    padding: 100px 0 50px 0
     position: relative
     
     &__see
@@ -374,7 +374,7 @@ img
 .contact
     text-align: center
     background-color: #fafafa
-    padding: 50px 0
+    padding: 50px 0 90px 0
 .subtitleBott_contact
     color: #061e37
     font-size: 15px
@@ -411,7 +411,7 @@ textarea
     outline-offset: 0
     font-size: 14px
     background-color: #fafafa
-.checkbox
+.form_bottom
     display: flex
     width: 40%
     margin: 20px auto
@@ -423,21 +423,67 @@ textarea
     label
         color: #061e37
         font-weight: 400
+.form
+    &__submit
+        margin-right: 0
+        margin-left: auto
+        width: 125px
+        height: 50px
+        background-color: #1de9b6
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        text-transform: uppercase
+        color: #fff
+        
+.footer
+    background-color: #061e37
+    min-height: 300px
+    position: relative
+    &__top
+        padding-top: 70px
+    
+    &__bottom
+        display: flex
+        position: relative
+        padding-top: 40px
+    &_social
+        margin: 0 0 0 auto
+        justify-content: space-between
+    &__info
+        display: flex
+        justify-content: space-between
+    &__item
+        text-decoration: none
+        margin-right: 25px
+        color: #999
+        font-size: 15px
+    &_menu_item
+        margin-right: 0
+    .menu_footer
+        align-items: baseline
+        
 
 
 
 
-
-
-
-
-
-
-
-@media (max-width: 991px)
+@media (max-width: 1240px)
     .container
-        max-width: 940px 
-        margin: 0 auto
+        max-width: 95%
+    .input_block
+        width: 90%
+    textarea
+        width: 73%
+    .content
+        &__title
+            font-size: 32px
+        &__subtitle
+            font-size: 13px
+            
+
+@media (max-width: 960px)
+    .container
+        max-width: 900px
     .header
         position: relative
     .opened .services__see
@@ -448,10 +494,58 @@ textarea
             
         &__content
             width: 70%
-@media (max-width: 840px)
+    .content
+        &__btns
+            text-align: center
+        &__title
+            font-size: 36px
+            text-align: center
+        &__subtitle
+            font-size: 16px
+            text-align: center
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__video
+            margin-top: 32px
+    
+@media (max-width: 720px)
+    .container
+        max-width: 660px
+    .menu
+        &__logo
+            display: none
+    .content
+        &__wrapper
+            flex-direction: column-reverse
+        &__video
+            display: none
+        &__btns
+            display: flex
+        &__title
+            font-size: 32px
+        &__subtitle
+            font-size: 14px
+    .useful
+        margin-bottom: 50px
+        &__subtitle
+            font-size: 12px
+        &__content
+            flex-direction: column
+            align-items: stretch
     .services
         &__text
             font-size: 12px
+    .input_block
+        width: 100%
+    textarea
+        width: 82%
+    .nav_footer
+        display: none
+    .footer
+        &__item
+            font-size: 12px
+@media (max-width: 540px)
 
     
   

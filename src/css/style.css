@@ -265,7 +265,7 @@ img {
 .services {
   min-height: 870px;
   text-align: center;
-  padding: 100px 0 100px 0;
+  padding: 100px 0 50px 0;
   position: relative; }
   .services__see {
     display: -webkit-box;
@@ -423,7 +423,7 @@ img {
 .contact {
   text-align: center;
   background-color: #fafafa;
-  padding: 50px 0; }
+  padding: 50px 0 90px 0; }
 
 .subtitleBott_contact {
   color: #061e37;
@@ -467,7 +467,7 @@ textarea {
   font-size: 14px;
   background-color: #fafafa; }
 
-.checkbox {
+.form_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,17 +477,78 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .checkbox input {
+  .form_bottom input {
     margin-right: 12px;
     border: 3px solid #061e37; }
-  .checkbox label {
+  .form_bottom label {
     color: #061e37;
     font-weight: 400; }
 
-@media (max-width: 991px) {
+.form__submit {
+  margin-right: 0;
+  margin-left: auto;
+  width: 125px;
+  height: 50px;
+  background-color: #1de9b6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff; }
+
+.footer {
+  background-color: #061e37;
+  min-height: 300px;
+  position: relative; }
+  .footer__top {
+    padding-top: 70px; }
+  .footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 40px; }
+  .footer_social {
+    margin: 0 0 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__item {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #999;
+    font-size: 15px; }
+  .footer_menu_item {
+    margin-right: 0; }
+  .footer .menu_footer {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+
+@media (max-width: 1240px) {
   .container {
-    max-width: 940px;
-    margin: 0 auto; }
+    max-width: 95%; }
+
+  .input_block {
+    width: 90%; }
+
+  textarea {
+    width: 73%; }
+
+  .content__title {
+    font-size: 32px; }
+  .content__subtitle {
+    font-size: 13px; } }
+@media (max-width: 960px) {
+  .container {
+    max-width: 900px; }
 
   .header {
     position: relative; }
@@ -498,9 +559,75 @@ textarea {
   .services__text {
     font-size: 15px; }
   .services__content {
-    width: 70%; } }
-@media (max-width: 840px) {
+    width: 70%; }
+
+  .content__btns {
+    text-align: center; }
+  .content__title {
+    font-size: 36px;
+    text-align: center; }
+  .content__subtitle {
+    font-size: 16px;
+    text-align: center; }
+  .content__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .content__video {
+    margin-top: 32px; } }
+@media (max-width: 720px) {
+  .container {
+    max-width: 660px; }
+
+  .menu__logo {
+    display: none; }
+
+  .content__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .content__video {
+    display: none; }
+  .content__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .content__title {
+    font-size: 32px; }
+  .content__subtitle {
+    font-size: 14px; }
+
+  .useful {
+    margin-bottom: 50px; }
+    .useful__subtitle {
+      font-size: 12px; }
+    .useful__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+
   .services__text {
+    font-size: 12px; }
+
+  .input_block {
+    width: 100%; }
+
+  textarea {
+    width: 82%; }
+
+  .nav_footer {
+    display: none; }
+
+  .footer__item {
     font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
